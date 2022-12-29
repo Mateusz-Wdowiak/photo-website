@@ -1,0 +1,159 @@
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 100%;
+  margin: 40px 100px;
+  gap: 50px;
+}
+
+.contactContainer .contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.contact h3 {
+  align-self: flex-start;
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: var(--second-color);
+}
+
+.contact span {
+  color: var(--hover-text-color);
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--hover-text-color);
+}
+
+.contact form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contact form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 50%;
+}
+
+.contact form label {
+  text-align: left;
+  padding-left: 10px;
+  color: var(--second-color);
+}
+
+.contact form input:hover,
+.contact form textarea:hover {
+  border: 1px solid var(--main-color);
+}
+
+.contact form button {
+  color: var(--base-text-color);
+  font-size: 0.75rem;
+  background-color: var(--main-color);
+  border: none;
+  cursor: pointer;
+}
+
+.textArea label {
+  padding-bottom: 5px;
+}
+
+.contactContainer .contactNumber {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.contactNumber .data {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--hover-text-color);
+  margin-bottom: 20px;
+}
+
+.data h4 {
+  font-size: 1rem;
+  color: var(--second-color);
+  margin-bottom: 15px;
+}
+
+.data span {
+  margin-bottom: 10px;
+}
+
+.number span:hover {
+  color: var(--main-color);
+  cursor: pointer;
+  text-align: center;
+}
+
+.number .phoneIcon {
+  display: inline-block;
+  font-size: 1rem;
+  padding-right: 5px;
+  transform: translateY(15%);
+}
+
+@media screen and (max-width: 1100px) {
+  .contactContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .contactContainer .contact {
+    width: 100%;
+  }
+
+  .contact h3 {
+    align-self: center;
+  }
+
+  .contact span {
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    align-self: center;
+  }
+  .contact form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .contact form div {
+    width: 100%;
+  }
+
+  .contact form label {
+    text-align: center;
+  }
+  .contact form input {
+    width: 70%;
+    align-self: center;
+  }
+  .contact form textarea {
+    width: 80%;
+    align-self: center;
+  }
+
+  .contactNumber .data {
+    text-align: center;
+  }
+
+  .number {
+    margin-bottom: 20px;
+  }
+}

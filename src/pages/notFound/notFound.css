@@ -1,0 +1,14 @@
+.errorPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  color: black;
+  font-size: 2rem;
+}
+
+.text_errorPage {
+  display: inline-block;
+  padding-top: 15px;
+}

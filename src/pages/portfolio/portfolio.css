@@ -1,0 +1,79 @@
+.portfolioContainer {
+  width: 100%;
+  height: 150vh;
+}
+
+.portfolioContainer .portfolioSpan {
+  display: block;
+  text-align: center;
+  margin: 50px 0;
+}
+.portfolioContainer .portfolioSpan span {
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 1px solid var(--hover-text-color);
+}
+
+.portfolioContainer .mySwiper {
+  height: 50%;
+}
+
+.portfolioContainer .mySwiper .swiperslide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolioh3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.portfolioContainer .offer {
+  display: flex;
+  height: 40%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.portfolioContainer .offer div {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 15px;
+}
+
+.portfolioContainer .offer div .portfolioIcon {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-bottom: 5px;
+}
+
+.portfolioContainer .offer div h4 {
+  font-size: 1rem;
+  color: var(--second-color);
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  .portfolioContainer {
+    height: 250vh;
+  }
+  .portfolioContainer .portfolioSpan span {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .portfolioh3 {
+    font-size: 1.5rem;
+  }
+  .portfolioContainer .offer {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .portfolioContainer .offer div {
+    flex-basis: 0;
+  }
+}

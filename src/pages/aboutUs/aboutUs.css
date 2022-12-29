@@ -1,0 +1,143 @@
+.containerAboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.containerAboutUs .aboutUsInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+
+.aboutUsInfo .menu {
+  display: flex;
+  justify-content: center;
+  font-size: 1.25rem;
+  width: 20%;
+  margin: 20px;
+  padding: 5px;
+  gap: 25px;
+}
+
+.aboutUsInfo .menu p {
+  color: var(--second-color);
+  cursor: pointer;
+  border-bottom: 1px solid var(--second-color);
+}
+
+.aboutUsInfo .menu p:hover {
+  color: var(--main-color);
+}
+
+.containerAboutUs .aboutUsInfo span {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+}
+
+.containerAboutUs .aboutUsServices {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--main-color);
+  background-image: linear-gradient(
+    180deg,
+    var(--main-color) 0%,
+    rgba(28, 49, 111, 1) 100%
+  );
+  width: 100%;
+  height: 70%;
+}
+
+.containerAboutUs .aboutUsServices div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--base-text-color);
+  flex-basis: 30%;
+  padding: 0 10px;
+}
+
+.containerAboutUs .aboutUsServices div .aboutUsIcon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.containerAboutUs .aboutUsServices div h4 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.containerAboutUs .aboutUsContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+
+.containerAboutUs .aboutUsContact span {
+  font-size: 1rem;
+  color: var(--second-color);
+  margin-right: 20px;
+}
+
+.containerAboutUs .aboutUsContact a {
+  font-weight: bold;
+  color: var(--base-text-color);
+  background-color: var(--main-color);
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .containerAboutUs {
+    height: 200vh;
+  }
+
+  .containerAboutUs .aboutUsInfo {
+    height: 15%;
+  }
+
+  .containerAboutUs .aboutUsContact {
+    flex-direction: column;
+  }
+
+  .containerAboutUs .aboutUsContact span {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .containerAboutUs .aboutUsInfo {
+    height: 20%;
+    margin-bottom: 30px;
+  }
+  .aboutUsInfo .menu {
+    font-size: 1.1rem;
+    width: 50%;
+  }
+
+  .containerAboutUs .aboutUsServices {
+    flex-direction: column;
+    height: 80%;
+  }
+
+  .containerAboutUs .aboutUsServices div {
+    flex-basis: 10%;
+  }
+  .containerAboutUs .aboutUsContact span {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
