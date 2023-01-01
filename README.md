@@ -21,7 +21,7 @@ npm start
 
 ```
 
-<p>Or click in link to </p>[GitHub Pages](https://mateusz-wdowiak.github.io/photo-website/)
+Or click in link to [GitHub Pages](https://mateusz-wdowiak.github.io/photo-website/)
 
 
 
